@@ -23,7 +23,7 @@ namespace GrandCircusLab11
             movieList.Add(new Movie("Hercules", "animated"));
             movieList.Add(new Movie("Halloween", "horror"));
             movieList.Add(new Movie("3 Ninjas", "comedy"));
-            movieList.Add(new Movie("the Godfather", "drama"));
+            movieList.Add(new Movie("The Godfather", "drama"));
             movieList.Add(new Movie("Star Wars", "scifi"));
 
             while (true)
