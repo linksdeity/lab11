@@ -66,7 +66,7 @@ namespace GrandCircusLab11
                         break;
                     case 7:
                         movieList.Add(AddAMovie(movieList));
-                        Console.WriteLine("Movie was added!\n(press anything to continue...)");
+                        Console.WriteLine("Movie was added to the list!");
                         break;
                 }
 
@@ -107,8 +107,9 @@ namespace GrandCircusLab11
 
         static Movie AddAMovie(List<Movie> movieList)
         {
-            return new Movie(GetString("Movie title...", @"^([A-Z0-9]*[a-z0-9]*\s*)+$"), GetString("Movie genre..." +
-            "\n(please type one of these: 'comedy' 'drama' 'scifi' 'fantasy' 'horror' 'animated'", @"^comedy$|^drama$|^scifi&|^fantasy$|^horror$|^animated$"));
+            Console.Clear();
+            return new Movie(GetString("Movie title in Title Case...", @"^([A-Z0-9]+[a-z0-9]*\s*)+$"), GetString("Movie genre in lower case..." +
+            "\n - please type one of these: 'comedy' 'drama' 'scifi' 'fantasy' 'horror' 'animated'", @"^comedy$|^drama$|^scifi&|^fantasy$|^horror$|^animated$"));
         }
 
 
